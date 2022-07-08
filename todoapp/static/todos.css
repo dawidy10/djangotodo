@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  height: 100vh;
+  background-color: #F0EBE3;
+}
+.logo{
+  font-family: 'Playfair Display', serif;
+  padding-left: 5vw;
+  padding-top: 1vh;
+  color: #2B2B2B;
+}
+.nav{
+  height: 8vh;
+  background-color: #E4DCCF;
+}
+
+
+.taskform{
+  margin-top: 15vh;
+  text-align: center;
+}
+.taskinput{
+  background-color: transparent;
+  border: 2px solid #2B2B2B;
+  width: 35%;
+  padding: 0.6rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  margin-right: 1.5%;
+}
+.submitbtn{
+  min-width: 50px;
+  width: 5%;
+  margin-left: 1.5%;
+  background-color: transparent;
+  border: 2px solid #2B2B2B;
+  padding: 0.6rem;
+  color: #2B2B2B;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}

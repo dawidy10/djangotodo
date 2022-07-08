@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{%block body%}
+
+    <div class="nav">
+        <h1 class="logo">Taskr</h1>
+      </div>
+
+      <div>
+        <form class="taskform" onSubmit={handleSubmit}>
+            <input class="taskinput" placeholder="Insert new task..." type="text"/>
+            <input class="submitbtn" type="submit" value="Add"/>
+        </form>
+        <!-- <ul class="todolist">
+          {todos.map((content, index) => (
+            <div key={index} class="itemWrap">
+              {/* {"listitem " + "mark"+mark[index]} */}
+              <li class={"listitem mark"+mark[index]}>{index+1}. {content}</li>
+              <button class="marktodo" onClick={() => markTodo(index)}>✓</button>
+              <button class="deletetodo" onClick={() => removeTodo(index)}>X</button>
+            </div>
+            
+          ))}
+        </ul> -->
+         
+        </div>
+
+{%endblock%}
