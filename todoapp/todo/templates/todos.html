@@ -19,9 +19,26 @@
           ))}
         </ul> -->
         <script type="text/babel">
-    
+            function add_task(){
+                console.log("lol");
+            }
+                
             function handleSubmit(e){
                 e.preventDefault();
+                // fetch('tasks')
+                // .then(response => response.json())
+                // .then(data => {
+                //     data.Tasks.id.forEach(add_task);
+                // })
+                fetch('tasks').then(async response => {
+                try {
+                const data = await response.json()
+                console.log('response data?', data)
+                } catch(error) {
+                console.log('Error happened here!')
+                console.error(error)
+                }
+                })
             }
             function Form(){
                 return(
@@ -33,6 +50,10 @@
                     </div>
                 )
             }
+            
+            // function Tasks(){
+                
+            // }
             
     
             ReactDOM.render(<Form />, document.querySelector('#main'));
