@@ -5,12 +5,8 @@
     <div class="nav">
         <h1 class="logo">Taskr</h1>
       </div>
-
-      <div>
-        <form class="taskform" onSubmit={handleSubmit}>
-            <input class="taskinput" placeholder="Insert new task..." type="text"/>
-            <input class="submitbtn" type="submit" value="Add"/>
-        </form>
+      
+      <div id="main"></div>
         <!-- <ul class="todolist">
           {todos.map((content, index) => (
             <div key={index} class="itemWrap">
@@ -22,7 +18,24 @@
             
           ))}
         </ul> -->
-         
-        </div>
+        <script type="text/babel">
+    
+            function handleSubmit(e){
+                e.preventDefault();
+            }
+            function Form(){
+                return(
+                    <div>
+                    <form className="taskform" onSubmit={handleSubmit}>
+                        <input name="task" className="taskinput" placeholder="Insert new task..." type="text"/>
+                        <input className="submitbtn" type="submit" value="Add"/>
+                    </form>
+                    </div>
+                )
+            }
+            
+    
+            ReactDOM.render(<Form />, document.querySelector('#main'));
+        </script>
 
 {%endblock%}
